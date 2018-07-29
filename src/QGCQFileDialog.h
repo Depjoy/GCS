@@ -40,7 +40,7 @@
 */
 
 class QGCQFileDialog : public QFileDialog {
-    
+    Q_OBJECT
 public:
 
     //! Static helper that will return an existing directory selected by the user.

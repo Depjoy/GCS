@@ -1046,3 +1046,19 @@ include(QGCSetup.pri)
 #
 
 include(QGCInstaller.pri)
+
+TRANSLATIONS += resources/translation/zh_en.ts
+
+lupdate_only{
+    SOURCES+= \
+        src/FlightDisplay/* \
+        src/ui/toolbar/*.qml \
+        src/AnalyzeView/*.qml \
+        src/AutoPilotPlugins/Common/*.qml \
+        src/AutoPilotPlugins/PX4/*.qml \
+        src/AutoPilotPlugins/APM/*.qml \
+        src/ui/*.qml \
+        src/QmlControls/*.qml \
+        src/ui/preferences/*.qml \
+        src/PlanView/*.qml \
+}
